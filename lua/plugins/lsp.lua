@@ -39,13 +39,16 @@ return {
       })
     end
   },
-
+  {
+    "nvim-java/nvim-java",
+  },
   -- LSP
   {
     'neovim/nvim-lspconfig',
     cmd = {'LspInfo', 'LspInstall', 'LspStart'},
     event = {'BufReadPre', 'BufNewFile'},
     dependencies = {
+      {"nvim-java/nvim-java"},
       {'hrsh7th/cmp-nvim-lsp'},
       {'williamboman/mason.nvim'},
       {'williamboman/mason-lspconfig.nvim'},
@@ -76,6 +79,8 @@ return {
         capabilities = require('cmp_nvim_lsp').default_capabilities()
       })
 
+      require('java').setup()
+
       require('mason-lspconfig').setup({
         ensure_installed = {},
         handlers = {
@@ -86,6 +91,8 @@ return {
           end,
         }
       })
+
+      require('lspconfig').jdtls.setup({})
     end
   }
 }
