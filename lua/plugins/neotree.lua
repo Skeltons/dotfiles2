@@ -5,11 +5,6 @@ return {
         { "<leader>t", "<cmd>Neotree toggle<CR>" },
     },
     opts = {
-        filesystem = {
-            filtered_items = {
-                visible = true,
-            },
-        },
         window = {
             mappings = {
                 ["<leader><leader>"] = {
