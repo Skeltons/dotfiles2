@@ -15,3 +15,14 @@ vim.opt.expandtab = true
 
 vim.opt.ignorecase = true
 vim.opt.shellcmdflag = "-c"
+
+vim.api.nvim_create_autocmd(
+    {
+        'BufRead', 'BufNewFile'
+    },
+    {
+        pattern = {'*.jsp'},
+        callback = function ()
+            vim.opt.filetype = "html"
+        end
+    })
