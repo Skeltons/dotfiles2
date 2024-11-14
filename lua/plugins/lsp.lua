@@ -93,6 +93,12 @@ return {
             })
 
             require('lspconfig').jdtls.setup({})
+            require('lspconfig').html.setup({
+                filetypes = {
+                    'html',
+                    'jsp'
+                }
+            })
         end
     }
 }

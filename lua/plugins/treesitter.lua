@@ -9,5 +9,6 @@ return {
                 enable = true
             }
         }
+        vim.treesitter.language.register('html', 'jsp')
     end,
 }
