@@ -99,6 +99,7 @@ return {
                     'jsp'
                 }
             })
+            require('lspconfig').lua_ls.setup(lsp_zero.nvim_lua_ls())
         end
     }
 }
