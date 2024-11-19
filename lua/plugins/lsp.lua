@@ -93,6 +93,11 @@ return {
             })
 
             require('lspconfig').jdtls.setup({})
+            require('lspconfig').kotlin_language_server.setup({
+                init_options = {
+                    storagePath = "/Users/oskarlew/cache/kotlin_language_server"
+                }
+            })
             require('lspconfig').html.setup({
                 filetypes = {
                     'html',
