@@ -15,4 +15,4 @@ vim.opt.expandtab = true
 
 vim.opt.ignorecase = true
 vim.opt.shellcmdflag = "-c"
-
+vim.opt.fileformats = "unix,dos"
