@@ -92,7 +92,17 @@ return {
                 }
             })
 
-            require('lspconfig').jdtls.setup({})
+            require('lspconfig').jdtls.setup({
+                vmargs = {
+                    "-XX:+UseParallelGC",
+                    "-XX:GCTimeRatio=4",
+                    "-XX:AdaptiveSizePolicyWeight=90",
+                    "-Dsun.zip.disableMemoryMapping=true",
+                    "-Djava.import.generatesMetadataFilesAtProjectRoot=false",
+                    "-Xmx16G",
+                    "-Xms8G",
+                }
+            })
             require('lspconfig').html.setup({
                 filetypes = {
                     'html',
