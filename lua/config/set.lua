@@ -16,3 +16,11 @@ vim.opt.expandtab = true
 vim.opt.ignorecase = true
 vim.opt.shellcmdflag = "-c"
 vim.opt.fileformats = "unix,dos"
+
+vim.api.nvim_create_autocmd("Filetype", {
+    pattern = "sql",
+    callback = function() 
+        vim.keymap.del('i','<left>',{buffer = true})
+        vim.keymap.del('i','<right>',{buffer = true})
+    end
+})
