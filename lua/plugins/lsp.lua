@@ -103,12 +103,12 @@ return {
                     "-Xms8G",
                 }
             })
-            require('lspconfig').html.setup({
-                filetypes = {
-                    'html',
-                    'jsp'
-                }
-            })
+            --require('lspconfig').html.setup({
+            --    filetypes = {
+            --        'html',
+            --        'jsp'
+            --    }
+            --})
             require('lspconfig').lua_ls.setup(lsp_zero.nvim_lua_ls())
         end
     }

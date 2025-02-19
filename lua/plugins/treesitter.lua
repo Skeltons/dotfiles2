@@ -15,9 +15,10 @@ return {
                 'luadoc',
                 'vim',
                 'lua',
-                'markdown'
+                'markdown',
+                'markdown_inline'
             }
         }
-        vim.treesitter.language.register('html', 'jsp')
+        --vim.treesitter.language.register('html', 'jsp')
     end,
 }
