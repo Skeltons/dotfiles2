@@ -1,7 +1,7 @@
 
 vim.cmd.colorscheme('tokyonight-night')
 
-vim.opt.updatetime = 50
+vim.opt.updatetime = 750
 vim.opt.termguicolors = true
 vim.opt.nu = true
 vim.opt.relativenumber = true
