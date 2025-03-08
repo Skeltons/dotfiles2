@@ -1,5 +1,5 @@
 
-vim.cmd.colorscheme('tokyonight-night')
+vim.cmd.colorscheme('kanagawa-wave')
 
 vim.opt.updatetime = 750
 vim.opt.termguicolors = true
