@@ -1,5 +1,5 @@
 
-vim.cmd.colorscheme('kanagawa-wave')
+vim.cmd.colorscheme('gruvbox')
 
 vim.opt.updatetime = 750
 vim.opt.termguicolors = true
